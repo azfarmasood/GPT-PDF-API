@@ -35,7 +35,7 @@ RUN apt-get update && apt-get install -y \
 
 EXPOSE 8000
 
-CMD ["poetry", "run", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--reload", "--workers", "2"]
+CMD ["poetry", "run", "uvicorn", "api.main:app", "--host", "0.0.0.0", "--reload"]
 
 
 # FROM python:3.12
